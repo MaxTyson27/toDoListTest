@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>ToDo List</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="inner">
+                <h1 class="title">Task List</h1>
+                <div class="todo">
+                    <div class="todo__filter">
+                        <button type="button" class="todo__filter-btn">All</button>
+                        <button type="button" class="todo__filter-btn">Only active</button>
+                        <button type="button" class="todo__filter-btn">Only completed</button>
+                    </div>
+                    <h5 class="todo__title">Add new Task!</h5>
+                    <div class="todo__add">
+                        <input type="text" class="todo__add-input">
+                        <button type="button" class="todo__add-btn">
+                            <img src="./images/plus.svg" alt="add task">
+                        </button>
+                        <p class="todo__add-error">Поле не должно быть пустым!</p>
+                    </div>
+                    <ul class="todo__list">
+                        <li class="todo-item todo__list-item">
+                            <p class="todo-item__text">Add a first task!</p>
+                            <button class="todo-item__btn todo-item__complete">
+                                <img src="./images/complete.svg" alt="complete task">
+                            </button>
+                            <button class="todo-item__btn todo-item__delete">
+                                <img src="./images/trash.svg" alt="delete task">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<script type="module" src="./script/main.js"></script>
+</body>
+</html>
